@@ -152,7 +152,6 @@ class Generator():
         self.siteId = re.search(r'"siteId":"([^"]+)"', response_text).group(1)
         self.fid = re.search(r'"fid":"([^"]+)"', response_text).group(1)
         self.hpgid = re.search(r'"hpgid":(\d+)', response_text).group(1)
-        print(response_text)
 
     def obtain_body(self) -> dict:
         return {
